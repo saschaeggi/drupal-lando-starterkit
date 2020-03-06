@@ -1626,7 +1626,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "c609187df71376228fee9862ffc8d7619620091e"
+                "reference": "506b3dcb8beea27e945eb74d76615a186b6237c5"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -1669,7 +1669,7 @@
                 "source": "https://git.drupalcode.org/project/gin",
                 "issues": "https://www.drupal.org/project/issues/gin"
             },
-            "time": "2020-03-06T19:56:49+00:00"
+            "time": "2020-03-06T23:07:45+00:00"
         },
         {
             "name": "drupal/gin_login",
