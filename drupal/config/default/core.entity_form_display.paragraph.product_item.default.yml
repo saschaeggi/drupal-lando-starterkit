@@ -1,0 +1,25 @@
+uuid: d752e7df-f8d2-41d6-85a6-d7d8d4d258dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.product_item.field_product
+    - paragraphs.paragraphs_type.product_item
+id: paragraph.product_item.default
+targetEntityType: paragraph
+bundle: product_item
+mode: default
+content:
+  field_product:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
