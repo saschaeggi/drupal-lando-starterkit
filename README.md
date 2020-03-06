@@ -1,4 +1,4 @@
-# Unic headless starterkit
+# Drupal Docksal Starterkit
 
 ## Prerequisites
 
