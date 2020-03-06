@@ -16,16 +16,16 @@ Install Docksal: https://docksal.io/
 ### Clone repo
 Clone the repo into ```~/Projects```
 ```
-git clone --recurse-submodules https://git.unic.com/scm/drupal/headless.git headless
+git clone git@github.com:saschaeggi/drupal-docksal-starterkit.git drupal-docksal-starterkit
 ```
 
-### Edit your /etc/hosts file
+### *Optional:* Add custom domain for local development
 Add the following to your `/etc/hosts`:
 
 ```
-# Docksal Headless
-192.168.64.100 headless.unic.local drupal.headless.unic.local storybook.headless.unic.local mail.headless.unic.local solr.headless.unic.local
-::2 headless.unic.local drupal.headless.unic.local storybook.headless.unic.local mail.headless.unic.local solr.headless.unic.local
+# Drupal Docksal Starterkit
+192.168.64.100 drupal.mydomain.local
+::2 drupal.mydomain.local
 ```
 
 ### Build/Install containers
@@ -39,12 +39,24 @@ fin init
 
 ### Start containers
 ```
-fin start
+fin start [or fin up]
 ```
 
 ### Stop containers
 ```
 fin stop
+```
+
+### When using VirtualBox instead of Docker for Mac
+
+#### Start Docksal VM Box
+```
+fin system start
+```
+
+#### Stop Docksal VM Box
+```
+fin system stop
 ```
 
 ### SSH into containers
@@ -55,7 +67,7 @@ fin bash
 
 #### Specific container
 ```
-fin exec --in=dev bash
+fin exec --in=CONTAINERNAME bash
 ```
 
 ### Drush
@@ -65,29 +77,33 @@ Make sure you're in the frontend folder (`cd drupal/web`)
 fin drush COMAMND
 ```
 
+### Composer
+Make sure you're in the frontend folder (`cd drupal/web`)
+
+```
+fin composer COMMAND
+```
+
 ---
 
-## Endpoints
+## Drupal
 
-### Frontend
-https://headless.unic.local/
+https://drupal-docksal-starterkit.docksal/
 
-### Drupal
-https://drupal.headless.unic.local/
 ```
 username: admin
 password: drupal
 ```
 
 ### GraphQL Default API
-https://drupal.headless.unic.local/graphql
+https://drupal-docksal-starterkit.docksal/graphql
 
 Authentication via Bearer access token.
 
 #### Get a Bearer Token
 ```
 curl --request POST \
-  --url http://drupal.headless.unic.local/oauth/token \
+  --url https://drupal-docksal-starterkit.docksal/oauth/token \
   --header 'content-type: application/x-www-form-urlencoded' \
   --data grant_type=password \
   --data username=api \
@@ -96,62 +112,8 @@ curl --request POST \
   --data 'client_secret=7U9_kQ_@ozhHi!.v-!'
   ```
 
-### Storybook
-https://storybook.headless.unic.local/
-
 ### Mailhog
-https://mail.headless.unic.local/
+https://mail.drupal-docksal-starterkit.docksal/
 
 ### Solr
-https://solr.headless.unic.local/
-
----
-
-## Building assets
-
-### Build Frontend
-```
-fin frontend
-```
-
-### Build Storybook
-```
-fin storybook
-```
----
-
-## Local Frontend enviroment
-
-Make sure you're in the frontend folder (`cd frontend`)
-
-### If `node_modules` aren't installed yet
-```
-nvm install && nvm use
-```
-
-### Run frontend
-Run's the watcher on `https://localhost:3333`
-```
-npm run nuxt
-```
-
-### Build frontend
-```
-npm run build
-```
-
-### Build static frontend
-```
-npm run generate
-```
-
-### Storybook
-Run's the watcher on `https://localhost:6006`
-```
-npm run storybook
-```
-
-### Static Storybook Build
-```
-npm run build-storybook
-```
+https://solr.drupal-docksal-starterkit.docksal/
