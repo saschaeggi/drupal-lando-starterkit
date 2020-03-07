@@ -30,6 +30,7 @@
         "drupal/gin_login": "1.x-dev",
         "drupal/gin_toolbar": "2.x-dev",
         "drupal/graphql": "^4.0",
+        "drupal/graphql_twig": "1.x",
         "drupal/imageapi_optimize": "^2.0",
         "drupal/imageapi_optimize_binaries": "^1.0",
         "drupal/imageapi_optimize_webp": "1.x-dev",
