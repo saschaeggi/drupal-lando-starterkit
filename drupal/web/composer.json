@@ -26,17 +26,19 @@
         "drupal/core-vendor-hardening": "^8.8",
         "drupal/entity_reference_layout": "1.x-dev",
         "drupal/erl_restriction": "^1.0",
+        "drupal/field_group": "^3.0",
         "drupal/gin": "3.x-dev",
         "drupal/gin_login": "1.x-dev",
         "drupal/gin_toolbar": "2.x-dev",
-        "drupal/graphql": "^4.0",
-        "drupal/graphql_twig": "1.x",
+        "drupal/graphql": "^3.0",
+        "drupal/graphql_twig": "^1.0",
         "drupal/imageapi_optimize": "^2.0",
         "drupal/imageapi_optimize_binaries": "^1.0",
         "drupal/imageapi_optimize_webp": "1.x-dev",
         "drupal/paragraphs": "^1.10",
         "drupal/readmehelp": "^1.0",
-        "drupal/simple_oauth": "^4.3"
+        "drupal/simple_oauth": "^4.3",
+        "drupal/typed_data": "^1.0"
     },
     "require-dev": {
     },

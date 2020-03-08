@@ -21,9 +21,9 @@ module:
   file: 0
   filter: 0
   gin_login: 0
-  git_deploy: 0
   graphql: 0
-  graphql_examples: 0
+  graphql_core: 0
+  graphql_twig: 0
   help: 0
   history: 0
   image: 0
@@ -57,7 +57,6 @@ module:
   tour: 0
   typed_data: 0
   update: 0
-  upgrade_status: 0
   user: 0
   views_ui: 0
   menu_link_content: 1

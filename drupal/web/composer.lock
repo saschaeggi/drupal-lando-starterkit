@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2476c04ced58a59a9736547c70fab1c9",
+    "content-hash": "3e1ea6e772d5362f9a23c5bcdeee616e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1218,7 +1218,8 @@
                     "Fix incorrect order and duplicate theme hook suggestions #2752443": "https://www.drupal.org/files/issues/2752443_incorrect-order-and-duplicate-theme-hook-suggestions-5.patch",
                     "Fix inline editing for paragraphs #2700147": "https://www.drupal.org/files/issues/2019-05-30/2700147-25.patch",
                     "Nested Paragraphs create multiple drag handles #3092181": "https://www.drupal.org/files/issues/2020-01-15/claro-nested_paragraphs_multiple_drag_handles-3092181-37--D8.8.1--fix-only--do-not-test.patch",
-                    "IEF Quick Edit #3110232": "https://www.drupal.org/files/issues/2020-01-31/3110232.patch"
+                    "IEF Quick Edit #3110232": "https://www.drupal.org/files/issues/2020-01-31/3110232.patch",
+                    "Language Fix": "https://www.drupal.org/files/issues/2019-02-28/language-2718657-17.patch"
                 }
             },
             "autoload": {
@@ -1621,12 +1622,75 @@
             }
         },
         {
+            "name": "drupal/field_group",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/field_group.git",
+                "reference": "8.x-3.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/field_group-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "8d87cdc4abc417aa4d411bffcaeb0a3ef1afa497"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0",
+                    "datestamp": "1580250787",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Hydra",
+                    "homepage": "https://www.drupal.org/user/647364"
+                },
+                {
+                    "name": "Stalski",
+                    "homepage": "https://www.drupal.org/user/322618"
+                },
+                {
+                    "name": "jyve",
+                    "homepage": "https://www.drupal.org/user/591438"
+                },
+                {
+                    "name": "nils.destoop",
+                    "homepage": "https://www.drupal.org/user/361625"
+                },
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "Provides the field_group module.",
+            "homepage": "https://www.drupal.org/project/field_group",
+            "support": {
+                "source": "https://git.drupalcode.org/project/field_group"
+            }
+        },
+        {
             "name": "drupal/gin",
             "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "a6112007c8b70f299774d8e51a40b8c8a2fe9f31"
+                "reference": "28edb7612229da36c6ccb5281a5a12cad7f51d3c"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -1638,7 +1702,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1583615614",
+                    "datestamp": "1583617671",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1669,7 +1733,7 @@
                 "source": "https://git.drupalcode.org/project/gin",
                 "issues": "https://www.drupal.org/project/issues/gin"
             },
-            "time": "2020-03-07T21:47:31+00:00"
+            "time": "2020-03-08T01:33:19+00:00"
         },
         {
             "name": "drupal/gin_login",
@@ -1769,38 +1833,33 @@
         },
         {
             "name": "drupal/graphql",
-            "version": "4.0.0-alpha4",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/graphql.git",
-                "reference": "8.x-4.0-alpha4"
+                "reference": "8.x-3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/graphql-8.x-4.0-alpha4.zip",
-                "reference": "8.x-4.0-alpha4",
-                "shasum": "ff0aad752f84e858f2e97930db3ae26fb2300323"
+                "url": "https://ftp.drupal.org/files/projects/graphql-8.x-3.0.zip",
+                "reference": "8.x-3.0",
+                "shasum": "ccba88a346fd816cccbf93f65273efbd6be70c2b"
             },
             "require": {
                 "drupal/core": "~8.0",
-                "drupal/typed_data": "*",
-                "php": ">=7.2",
-                "webonyx/graphql-php": "^0.13.1"
-            },
-            "require-dev": {
-                "drupal/node-node": "*"
+                "webonyx/graphql-php": "^0.12.5"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-4.x": "4.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-4.0-alpha4",
-                    "datestamp": "1583233147",
+                    "version": "8.x-3.0",
+                    "datestamp": "1572538570",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -1829,22 +1888,68 @@
             }
         },
         {
+            "name": "drupal/graphql_core",
+            "version": "3.0.0",
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/graphql": "self.version"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.0",
+                    "datestamp": "1572538570",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "fubhy",
+                    "homepage": "https://www.drupal.org/user/761344"
+                },
+                {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                },
+                {
+                    "name": "pmelab",
+                    "homepage": "https://www.drupal.org/user/555322"
+                }
+            ],
+            "description": "Provides type system plugins and derivers on behalf of core modules.",
+            "homepage": "https://www.drupal.org/project/graphql",
+            "support": {
+                "source": "https://git.drupalcode.org/project/graphql"
+            }
+        },
+        {
             "name": "drupal/graphql_twig",
-            "version": "1.0.0-beta12",
+            "version": "1.0.0-beta15",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/graphql_twig.git",
-                "reference": "8.x-1.0-beta12"
+                "reference": "8.x-1.0-beta15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/graphql_twig-8.x-1.0-beta12.zip",
-                "reference": "8.x-1.0-beta12",
-                "shasum": "e52df809a30bf9076654326a19aac70a4b3735e1"
+                "url": "https://ftp.drupal.org/files/projects/graphql_twig-8.x-1.0-beta15.zip",
+                "reference": "8.x-1.0-beta15",
+                "shasum": "47a3cc257fdbc9bfd8702a112a7e19faf697583c"
             },
             "require": {
-                "drupal/core": "^8.6",
-                "drupal/graphql": "*"
+                "drupal/core": "^8 || ^9",
+                "drupal/graphql": "<4.0",
+                "drupal/graphql_core": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1852,8 +1957,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta12",
-                    "datestamp": "1572746884",
+                    "version": "8.x-1.0-beta15",
+                    "datestamp": "1580116686",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -1870,12 +1975,12 @@
                     "homepage": "https://www.drupal.org/u/pmelab"
                 },
                 {
-                    "name": "fubhy",
-                    "homepage": "https://www.drupal.org/user/761344"
+                    "name": "Sebastian Siemssen",
+                    "homepage": "https://www.drupal.org/u/fubhy"
                 },
                 {
-                    "name": "pmelab",
-                    "homepage": "https://www.drupal.org/user/555322"
+                    "name": "Sascha Eggenberger",
+                    "homepage": "https://www.drupal.org/u/saschaeggi"
                 },
                 {
                     "name": "saschaeggi",
@@ -1885,8 +1990,8 @@
             "description": "Feed Twig templates with GraphQL.",
             "homepage": "http://drupal.org/project/graphql_twig",
             "support": {
-                "source": "https://git.drupalcode.org/project/graphql_twig",
-                "issues": "https://github.com/drupal-graphql/graphql-twig"
+                "source": "http://cgit.drupalcode.org/graphql_twig",
+                "issues": "https://www.drupal.org/project/issues/graphql_twig"
             }
         },
         {
@@ -4799,31 +4904,24 @@
         },
         {
             "name": "webonyx/graphql-php",
-            "version": "v0.13.8",
+            "version": "v0.12.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webonyx/graphql-php.git",
-                "reference": "6829ae58f4c59121df1f86915fb9917a2ec595e8"
+                "reference": "4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/6829ae58f4c59121df1f86915fb9917a2ec595e8",
-                "reference": "6829ae58f4c59121df1f86915fb9917a2ec595e8",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95",
+                "reference": "4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": "^7.1||^8.0"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^6.0",
-                "phpbench/phpbench": "^0.14.0",
-                "phpstan/phpstan": "^0.11.4",
-                "phpstan/phpstan-phpunit": "^0.11.0",
-                "phpstan/phpstan-strict-rules": "^0.11.0",
-                "phpunit/phpcov": "^5.0",
-                "phpunit/phpunit": "^7.2",
+                "phpunit/phpunit": "^4.8",
                 "psr/http-message": "^1.0",
                 "react/promise": "2.*"
             },
@@ -4847,7 +4945,7 @@
                 "api",
                 "graphql"
             ],
-            "time": "2019-08-25T10:32:47+00:00"
+            "time": "2018-09-02T14:59:54+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",

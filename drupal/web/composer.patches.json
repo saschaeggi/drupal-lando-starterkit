@@ -4,7 +4,8 @@
         "Fix incorrect order and duplicate theme hook suggestions #2752443": "https://www.drupal.org/files/issues/2752443_incorrect-order-and-duplicate-theme-hook-suggestions-5.patch",
         "Fix inline editing for paragraphs #2700147": "https://www.drupal.org/files/issues/2019-05-30/2700147-25.patch",
         "Nested Paragraphs create multiple drag handles #3092181": "https://www.drupal.org/files/issues/2020-01-15/claro-nested_paragraphs_multiple_drag_handles-3092181-37--D8.8.1--fix-only--do-not-test.patch",
-        "IEF Quick Edit #3110232": "https://www.drupal.org/files/issues/2020-01-31/3110232.patch"
+        "IEF Quick Edit #3110232": "https://www.drupal.org/files/issues/2020-01-31/3110232.patch",
+        "Language Fix": "https://www.drupal.org/files/issues/2019-02-28/language-2718657-17.patch"
     },
     "drupal/paragraphs": {
       "Use small button component for Claro #3111075": "https://www.drupal.org/files/issues/2020-02-05/claro-small-buttons-3111075-3.patch"
