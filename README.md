@@ -1,5 +1,7 @@
 # Drupal Docksal Starterkit
 
+A Drupal Starterkit with GraphQL, GraphQL Twig, Gin Future UI, Minimal Frontend Setup with Webpack and vanilla JS running on Docksal (Docker).
+
 ## Prerequisites
 
 ### Get Docker (for Mac/Windows)
