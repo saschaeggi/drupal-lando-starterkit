@@ -1,0 +1,22 @@
+uuid: 9e25230a-3bfc-4cab-a05c-2fcc4b6e3c77
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - frontend
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: frontend_content
+theme: frontend
+region: content
+weight: 3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

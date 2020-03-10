@@ -1,0 +1,22 @@
+uuid: 0aadfaab-53be-4143-a5bb-d622d6842e6f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - frontend
+_core:
+  default_config_hash: 7cvXIzw8NabmQCWMPqBz0mvIQZzXUZB3OeOTa5eqbCo
+id: frontend_primary_local_tasks
+theme: frontend
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

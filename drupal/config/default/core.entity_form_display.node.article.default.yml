@@ -11,9 +11,57 @@ dependencies:
     - node.type.article
   module:
     - entity_reference_layout
+    - field_group
     - image
     - path
     - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_details
+        - group_content
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_details:
+      children:
+        - title
+        - body
+        - langcode
+        - field_tags
+        - field_image
+      parent_name: group_tabs
+      weight: 11
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: closed
+        required_fields: true
+      label: Details
+    group_content:
+      children:
+        - field_contents
+      parent_name: group_tabs
+      weight: 12
+      format_type: tab
+      region: content
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        formatter: open
+        required_fields: true
+      label: Content
 _core:
   default_config_hash: 6VUXB1jTUjK5zjkfMa2Kd2WW4sFUlgfBlfJSx01qLpU
 id: node.article.default
@@ -33,12 +81,12 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 2
     region: content
     settings: {  }
     third_party_settings: {  }
   field_contents:
-    weight: 121
+    weight: 12
     settings:
       preview_view_mode: default
       always_show_options_form: 0
@@ -72,7 +120,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -80,21 +128,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 7
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
@@ -107,7 +155,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 1
     region: content
     settings:
       match_operator: CONTAINS

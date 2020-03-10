@@ -1,0 +1,20 @@
+uuid: 101c988b-acc9-4e0f-91ae-f82b0a2e6d34
+langcode: en
+status: true
+dependencies:
+  theme:
+    - frontend
+_core:
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+id: frontend_page_title
+theme: frontend
+region: content
+weight: 2
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -7,6 +7,7 @@ module:
   ckeditor: 0
   ckeditorheight: 0
   coffee: 0
+  components: 0
   config: 0
   consumers: 0
   contextual: 0
@@ -17,10 +18,12 @@ module:
   entity_reference_layout: 0
   entity_reference_revisions: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
   gin_login: 0
+  gin_toolbar: 0
   graphql: 0
   graphql_core: 0
   graphql_twig: 0
@@ -40,6 +43,8 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs_edit: 0
+  paragraphs_modal_edit: 0
   path: 0
   path_alias: 0
   quickedit: 0
@@ -69,7 +74,7 @@ theme:
   classy: 0
   claro: 0
   gin: 0
-  bartik: 0
+  frontend: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
