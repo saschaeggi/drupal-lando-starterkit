@@ -22,9 +22,6 @@
     "drupal/imageapi_optimize_webp": {
       "Adding missing composer.json #3103769": "https://www.drupal.org/files/issues/2019-12-30/3103769-missing-composer-json-2.patch",
       "Fixes for Drupal 9 #3105321": "https://www.drupal.org/files/issues/2020-01-14/3105321-3-drupal9-compatibility-issues-fix.patch"
-    },
-    "drupal/field_group": {
-      "Fieldgroups in layout builder": "https://www.drupal.org/files/issues/2019-09-09/add-form-layout-hooks.3044595.14.patch"
     }
   }
 }
