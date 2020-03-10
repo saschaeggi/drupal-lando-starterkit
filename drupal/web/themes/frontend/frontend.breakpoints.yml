@@ -1,0 +1,33 @@
+frontend.any:
+  label: No media query
+  weight: 1
+  frontend.small:
+  label: small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1.5x
+frontend.medium:
+  label: medium
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1.5x
+frontend.large:
+  label: large
+  mediaQuery: 'all and (min-width: 1025px)'
+  weight: 2
+  multipliers:
+    - 1.5x
+frontend.wide:
+  label: wide
+  mediaQuery: 'all and (min-width: 1280px)'
+  weight: 3
+  multipliers:
+    - 1.5x
+frontend.ultra:
+  label: ultra
+  mediaQuery: 'all and (min-width: 1440px)'
+  weight: 3
+  multipliers:
+    - 1.5x

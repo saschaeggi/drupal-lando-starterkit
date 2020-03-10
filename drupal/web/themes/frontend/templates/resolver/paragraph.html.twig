@@ -1,0 +1,32 @@
+{% set paragraph = graphql.paragraphById %}
+{% set entity = graphql.entity %}
+
+{%
+  set classes = [
+  'm-' ~ paragraph.type|clean_class,
+  'paragraph',
+  'paragraph--type--' ~ paragraph.type|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.published ? 'paragraph--unpublished'
+]
+%}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ graphql_debug }}
+      {{ content.contextual_links }}
+
+      {% include '@modules/text/text.twig' with { 'graphql': graphql, 'data': paragraph, 'content': content } %}
+
+      {# {% include [
+        ('@src/modules/' ~ paragraph.type ~ '/' ~ paragraph.type ~ '.html.twig'),
+        '@frontend/drupal/paragraphs/paragraph--section.html.twig'
+      ] ignore missing with {
+        'graphql': graphql,
+        'data': paragraph,
+        'content': content
+      } %} #}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

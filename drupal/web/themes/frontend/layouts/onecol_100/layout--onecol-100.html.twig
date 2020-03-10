@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme implementation to display a two-column layout.
+ *
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'layout',
+    'layout--onecol-100'
+  ]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+
+    {% if content.first %}
+      <div {{ region_attributes.first.addClass('layout__region', 'layout__region--first') }}>
+        {{ content.first }}
+      </div>
+    {% endif %}
+
+  </div>
+{% endif %}

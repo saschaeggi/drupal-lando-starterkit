@@ -1,0 +1,11 @@
+{# {%
+  set classes = [
+    'paragraphs',
+  ]
+%} #}
+
+{# <div{{ attributes.addClass(classes) }}> #}
+{% for item in items %}
+  {{ item.content }}
+{% endfor %}
+{# </div> #}

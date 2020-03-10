@@ -1,0 +1,6 @@
+fragment Text on ParagraphText {
+  id
+  fieldText {
+    processed
+  }
+}

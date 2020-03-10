@@ -1,0 +1,14 @@
+query ($node: String!) {
+  nodeById(id: $node) {
+    __typename
+    entityId
+    entityBundle
+    entityPublished
+    title
+    ... on NodeArticle {
+      body {
+        processed
+      }
+    }
+  }
+}

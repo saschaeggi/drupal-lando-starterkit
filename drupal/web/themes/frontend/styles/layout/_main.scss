@@ -1,0 +1,12 @@
+/* ==|====================
+   Layout / Main
+   ======================= */
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+
+  @media #{$navigation-up} {
+    flex-direction: row;
+  }
+}

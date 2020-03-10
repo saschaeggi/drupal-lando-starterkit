@@ -1,0 +1,29 @@
+layout_onecol:
+  label: 'One column'
+  path: layouts/onecol_100
+  library: frontend/layout_onecol_100
+  template: layout--onecol-100
+  category: 'Columns: 1'
+  default_region: first
+  weight: -99
+  icon_map:
+    - [first]
+  regions:
+    first:
+      label: Content
+
+layout_twocol_50:
+  label: 'Two column 50/50'
+  path: layouts/twocol_50
+  library: frontend/layout_twocol_50
+  template: layout--twocol-50
+  category: 'Columns: 2'
+  default_region: first
+  weight: -98
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: Left
+    second:
+      label: Right

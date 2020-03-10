@@ -1,0 +1,13 @@
+/* ==|====================
+   Layout / Pagewrapper
+   ======================= */
+
+.l-pagewrapper {
+  max-width: $max-container-width;
+  margin: auto;
+
+  @media #{$wide-up} {
+    border: 1px solid black;
+  }
+}
+
