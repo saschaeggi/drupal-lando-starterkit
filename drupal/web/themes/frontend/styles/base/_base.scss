@@ -2,27 +2,6 @@
   Base
 ======================= */
 
-@-ms-viewport {
-  width: auto;
-}
-
-html {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-  max-width: 100%;
-}
-
-* {
-  &,
-  &:after,
-  &:before {
-    box-sizing: border-box;
-  }
-
-  font-variant-ligatures: none;
-}
-
 article {
   overflow-x: hidden;
 }
@@ -51,59 +30,8 @@ body {
   background: lighten($color-selection, 30);
 }
 
-h1, h2, h3, h4, h5, h6 {
-}
-
 .h1-alike,
 h1 {
   font-size: 3rem;
   font-weight: 500;
-}
-
-.h2-alike,
-h2 {
-
-}
-
-.h3-alike,
-h3 {
-
-}
-
-.h4-alike,
-h4,
-h5,
-h6 {
-
-}
-
-p {
-
-}
-
-
-a,
-button {
-
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  border: 0;
-}
-
-svg {
-  pointer-events: none;
-}
-
-li {
-  line-height: 32px;
-}
-
-input,
-textarea {
-  &::-ms-clear {
-    display: none;
-  }
 }

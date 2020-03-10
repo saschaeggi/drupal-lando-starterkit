@@ -1,16 +1,11 @@
 /* ==|====================
-   Settings / General Vars
-   ======================= */
+  Settings / General Vars
+  ======================= */
 
 //== Base
 //
 $font: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $font-size-base: 16px;
-$font-size-normal: 17px;
-$font-size-large: 20px;
-$font-bold: bold;
-$font-semi: 500;
-$font-regular: normal;
 
 //== Default Colors
 //
@@ -20,11 +15,6 @@ $color-white: #fff;
 //== Layout
 //
 $max-container-width: 1064px;
-$max-width-text: 845px;
-
-//== List
-//
-$list-spacer: rem(4);
 
 //== Grid
 //
@@ -46,17 +36,6 @@ $gutter-ultra: 120px;
 $gutter-huge: 144px;
 
 //== Breakpoints
-//
-$screen-micro: 375px;
-$screen-small: 540px;
-$screen-default: 620px;
-$screen-medium: 768px;
-$screen-large: 1024px;
-$screen-navigation: 1264px;
-$screen-wide: $max-container-width;
-$screen-ultra: 1920px;
-
-//== Main breakpoints
 //
 $sizeBreakpointSmall: 768px;
 $sizeBreakpointMedium: 1024px;

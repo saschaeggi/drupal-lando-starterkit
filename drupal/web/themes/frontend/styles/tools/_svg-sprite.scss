@@ -1,4 +1,6 @@
 // https://github.com/waldemarfm/sass-svg-uri/blob/v1.0.0/_svg-uri.scss
+// DO NOT REMOVE; OVERRIDES THE _svg-sprite functions
+
 @function sprite-str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);
 

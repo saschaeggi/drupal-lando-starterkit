@@ -1,92 +1,29 @@
 /**
- * Drupal tabs
- */
- .block-unic-local-tasks {
-  ul.tabs {
-   position: relative;
-   z-index: 1;
-   list-style: none;
-   margin: 0;
-   padding: 0;
-   text-align: center;
- }
-
- .tabs {
-   > li {
-     display: inline-block;
-     margin-right: 0.3em;
-   }
-
-   a:link {
-     display: block;
-     padding: 0.2em 1em;
-     font-weight: 400;
-     color: #000;
-     border-radius: 16px;
-
-     &:hover {
-       background-color: #f5f5f5;
-     }
-
-     &.is-active {
-       font-weight: 700;
-       background-color: #eee;
-     }
-   }
- }
-}
-
-/**
-* Toolbar correct font sizes
-*/
-.toolbar {
- .toolbar-item {
-   font-size: 13px;
- }
-
- .toolbar-menu {
-   .menu-item {
-     a {
-       font-size: 13px;
-       font-weight: normal;
-     }
-   }
- }
-}
-
-/**
-* Place Drupal Toolbar edit button on right side
-*/
-.toolbar .toolbar-bar div.contextual-toolbar-tab.toolbar-tab {
- float: right;
-}
-
-/**
 * Drupal modal
 */
 .ui-dialog {
   max-width: 940px;
   margin: 0 auto;
 
-  .ui-dialog-titlebar {
-    font-size: 1.5em;
-    padding: 24px;
-  }
+  // .ui-dialog-titlebar {
+  //   font-size: 1.5em;
+  //   padding: 24px;
+  // }
 
-  .ui-dialog-titlebar-close {
-    right: 24px;
-  }
+  // .ui-dialog-titlebar-close {
+  //   right: 24px;
+  // }
 
-  .form-type-textfield {
-    label {
-      display: block;
-    }
-  }
+  // .form-type-textfield {
+  //   label {
+  //     display: block;
+  //   }
+  // }
 
-  a.tabledrag-handle .handle {
-    width: 24px;
-    height: 24px;
-  }
+  // a.tabledrag-handle .handle {
+  //   width: 24px;
+  //   height: 24px;
+  // }
 }
 
 /**
@@ -95,18 +32,3 @@
 .graphql-twig-debug-button {
   z-index: 10;
 }
-
-/**
-* Drupal toolbar
-**/
-// .toolbar-fixed {
-//   .header {
-//     padding-top: 39px;
-//   }
-//
-//   &.toolbar-tray-open {
-//     .header {
-//       padding-top: 79px;
-//     }
-//   }
-// }

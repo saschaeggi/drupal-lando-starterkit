@@ -15,18 +15,6 @@
   border: none;
 }
 
-@mixin stallTiming($hold, $start, $end, $gap) {
-	$delay: $hold;
-	@for $i from $start through $end {
-		$delay: $delay + $gap;
-
-		&:nth-child(#{$i}) {
-			animation-delay: #{$delay}ms;
-
-		}
-	}
-}
-
 @mixin gridCol($size: $gridColumns, $columns: $gridColumns, $gutter: $gridGutter, $align: top, $maxWidth: true) {
   $percentageColumnSize: percentage($size / $columns);
 
@@ -91,17 +79,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-@mixin dottedBorder() {
-  content: '';
-  background-image: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%);
-  background-position: bottom;
-  background-size: 7px 1px;
-  background-repeat: repeat-x;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  border-radius: 50%;
 }

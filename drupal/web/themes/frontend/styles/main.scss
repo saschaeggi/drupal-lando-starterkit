@@ -12,7 +12,6 @@ $output-bourbon-deprecation-warnings: false;
 @import "settings/settings";
 
 // Settings
-@import "settings/breakpoints";
 @import "settings/fonts";
 
 // Helpers
@@ -20,9 +19,6 @@ $output-bourbon-deprecation-warnings: false;
 
 // Tools
 @import "tools/**/*";
-
-// Grid
-@import "settings/grid";
 
 // Base
 @import "base/**/*";
