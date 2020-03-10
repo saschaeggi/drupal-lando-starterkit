@@ -125,7 +125,7 @@ https://solr.drupal-docksal-starterkit.docksal/
 ## Frontend Theme
 
 ### Run theme (compile / watch)
-Install (run outside of vagrant):
+Install
 ```
 cd site/web/themes/frontend/
 nvm use
