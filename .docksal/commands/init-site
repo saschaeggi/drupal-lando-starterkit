@@ -78,7 +78,7 @@ site_install ()
 	echo
 	echo -e "${yellow}Importing db...${NC}"
 	echo
-	drush sql-cli < ${PROJECT_ROOT}/drupal/db_dump/headless.sql
+	drush sql-cli < ${PROJECT_ROOT}/drupal/db_dump/drupal.sql
 
 	# Importing configuration
 	echo
