@@ -1,4 +1,4 @@
-uuid: 0aadfaab-53be-4143-a5bb-d622d6842e6f
+uuid: 41d89bbd-68d4-4304-8b3d-f29f7012b1c0
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: frontend_primary_local_tasks
 theme: frontend
 region: content
-weight: -1
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

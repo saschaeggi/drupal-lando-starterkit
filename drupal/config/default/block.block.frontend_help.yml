@@ -1,4 +1,4 @@
-uuid: 6959cfaf-e08b-4355-af4b-eec2923c68a0
+uuid: d648d916-95ee-4589-b906-480beca0ba63
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: frontend_help
 theme: frontend
 region: content
-weight: -2
+weight: -3
 provider: null
 plugin: help_block
 settings:

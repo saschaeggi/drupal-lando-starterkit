@@ -1,6 +1,6 @@
-uuid: 101c988b-acc9-4e0f-91ae-f82b0a2e6d34
+uuid: 031ac7ff-a058-4255-beda-85ee3b455791
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - frontend
@@ -9,7 +9,7 @@ _core:
 id: frontend_page_title
 theme: frontend
 region: content
-weight: 2
+weight: 0
 provider: null
 plugin: page_title_block
 settings:

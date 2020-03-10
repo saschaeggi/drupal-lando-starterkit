@@ -1,4 +1,4 @@
-uuid: 2e4a5103-6b59-47cd-81d0-47c77c00076d
+uuid: c9ec9380-5178-49fe-9f89-56ba75e0ffc3
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 id: sitebranding
 theme: frontend
 region: header
-weight: -5
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:

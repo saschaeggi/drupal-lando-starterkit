@@ -9,7 +9,7 @@ _core:
 id: gin_page_title
 theme: gin
 region: header
-weight: -30
+weight: -3
 provider: null
 plugin: page_title_block
 settings:

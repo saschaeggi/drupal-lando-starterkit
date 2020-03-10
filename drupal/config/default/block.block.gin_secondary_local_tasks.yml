@@ -1,4 +1,4 @@
-uuid: 2d0a9055-c7d3-4b9b-b33c-0177e4d1723c
+uuid: f6177f76-012d-4ad9-a3cf-0881fd589c15
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: gin_secondary_local_tasks
 theme: gin
 region: pre_content
-weight: 0
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

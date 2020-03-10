@@ -1,4 +1,4 @@
-uuid: 9e25230a-3bfc-4cab-a05c-2fcc4b6e3c77
+uuid: 7b1f5092-5c40-4ec6-9f79-3e699082814f
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: frontend_content
 theme: frontend
 region: content
-weight: 3
+weight: 2
 provider: null
 plugin: system_main_block
 settings:

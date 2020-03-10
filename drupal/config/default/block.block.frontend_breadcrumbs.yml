@@ -1,4 +1,4 @@
-uuid: 6f260e5b-d596-4299-adb9-ad96cc321be7
+uuid: 53455fe0-5911-48bc-abbd-470e92cc360d
 langcode: en
 status: false
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: frontend_breadcrumbs
 theme: frontend
 region: content
-weight: -3
+weight: 3
 provider: null
 plugin: system_breadcrumb_block
 settings:

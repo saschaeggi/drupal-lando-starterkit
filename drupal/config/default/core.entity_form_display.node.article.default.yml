@@ -38,7 +38,7 @@ third_party_settings:
         - field_tags
         - field_image
       parent_name: group_tabs
-      weight: 11
+      weight: 13
       format_type: tab
       region: content
       format_settings:
@@ -52,7 +52,7 @@ third_party_settings:
       children:
         - field_contents
       parent_name: group_tabs
-      weight: 12
+      weight: 14
       format_type: tab
       region: content
       format_settings:
@@ -71,7 +71,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 1
+    weight: 2
     region: content
     settings:
       rows: 9
@@ -81,7 +81,7 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -95,7 +95,7 @@ content:
     region: content
   field_image:
     type: image_image
-    weight: 4
+    weight: 5
     region: content
     settings:
       progress_indicator: throbber
@@ -103,7 +103,7 @@ content:
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS
@@ -113,14 +113,14 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 3
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 6
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -128,26 +128,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 8
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 9
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 1
     region: content
     settings:
       size: 60
@@ -155,7 +155,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 6
     region: content
     settings:
       match_operator: CONTAINS
