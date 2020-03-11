@@ -1,24 +1,22 @@
 /**
- * @file Starterkit Module Example
+ * @file <%= storyName %>
  *
- * @module starterkit-example
+ * @module <%= storyName %>
  *
  */
 
-import helperDom from '../helpers/helper-dom';
-
 const instance = {},
-    defaults = {
-        container: '.m-starterkit'
-    },
-    settings = {};
+  defaults = {
+    container: '.<%= storyClass %>'
+  },
+  settings = {};
 
 // Module Variables
 let container;
 
 // Private Functions
-const delegate = (e) => {
-  console.log(e);
+const bind = (e) => {
+  // Your private code
 };
 
 /**
@@ -32,6 +30,7 @@ instance.init = (options) => {
     Object.assign(settings, defaults, options);
 
     // Public Code
+    bind();
 
     return instance;
 };

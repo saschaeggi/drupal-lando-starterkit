@@ -143,3 +143,9 @@ Compile assets
 cd site/web/themes/frontend/
 npm run prod
 ```
+
+Scaffold components
+```
+cd site/web/themes/frontend/
+npm run scaffold
+```
