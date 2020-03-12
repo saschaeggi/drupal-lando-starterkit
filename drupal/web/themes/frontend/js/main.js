@@ -17,6 +17,16 @@ import text from '../src/modules/text/text.js';
 
 import { runInContext } from 'vm';
 
+// Vue app
+import Vue from 'vue';
+import './App.vue';
+
+window.addEventListener('DOMContentLoaded', function() {
+  new Vue({
+    el: '#app',
+  });
+});
+
 window.addEventListener('load', function() {
   //Page loaded
   document.querySelector('body').classList.add('loaded');

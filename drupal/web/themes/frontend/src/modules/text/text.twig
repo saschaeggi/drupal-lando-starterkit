@@ -1,5 +1,10 @@
 {% block content %}
-<div class="m-text">
-  {% include '@components/text/text.twig' with {'text': data.fieldText.processed} %}
+<div is="text" inline-template>
+  <div class="m-text">
+    <button type="button" @click="toggle">Toggle text</button>
+    <div v-show="isVisible" style="display: none;">
+      {% include '@components/text/text.twig' with {'text': data.fieldText.processed} %}
+    </div>
+  </div>
 </div>
 {% endblock %}
