@@ -127,25 +127,25 @@ https://solr.drupal-docksal-starterkit.docksal/
 ### Run theme (compile / watch)
 Install
 ```
-cd site/web/themes/frontend/
+cd drupal/web/themes/frontend/
 nvm use
 npm install
 ```
 
 Run watcher
 ```
-cd site/web/themes/frontend/
+cd drupal/web/themes/frontend/
 npm run dev
 ```
 
 Compile assets
 ```
-cd site/web/themes/frontend/
+cd drupal/web/themes/frontend/
 npm run prod
 ```
 
 Scaffold components
 ```
-cd site/web/themes/frontend/
+cd drupal/web/themes/frontend/
 npm run scaffold
 ```
