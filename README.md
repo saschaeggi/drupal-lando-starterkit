@@ -35,6 +35,9 @@ Add the following to your `/etc/hosts`:
 fin init
 ```
 
+### Fix services link
+Replace `/sites/development.services.yml` in `drupal/web/sites/default/settings.local.php` with `/sites/local.services.yml`.
+
 ---
 
 ## Commands
