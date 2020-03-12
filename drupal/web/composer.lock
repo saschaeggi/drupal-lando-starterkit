@@ -1741,7 +1741,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "9de1f5de91b289399f9f18396aed243f34098318"
+                "reference": "dc83dc0ccd2be475455e84263d31101f296f9e03"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -1753,7 +1753,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.x-dev",
-                    "datestamp": "1583882057",
+                    "datestamp": "1584046320",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1784,7 +1784,7 @@
                 "source": "https://git.drupalcode.org/project/gin",
                 "issues": "https://www.drupal.org/project/issues/gin"
             },
-            "time": "2020-03-12T20:51:17+00:00"
+            "time": "2020-03-12T21:13:25+00:00"
         },
         {
             "name": "drupal/gin_login",
@@ -1792,7 +1792,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_login.git",
-                "reference": "11f3dbafddcea33b1ce312efc8dedb8190e68b85"
+                "reference": "ce1bbd70b3cf342c0eb2354d1af4fe8b01bd3d8f"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -1834,7 +1834,7 @@
                 "source": "http://cgit.drupalcode.org/gin_login",
                 "issues": "https://www.drupal.org/project/issues/gin_login"
             },
-            "time": "2020-02-18T12:40:23+00:00"
+            "time": "2020-03-12T21:13:35+00:00"
         },
         {
             "name": "drupal/gin_toolbar",
