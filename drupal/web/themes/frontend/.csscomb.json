@@ -366,7 +366,7 @@
       "clip",
       "clip-path",
       "zoom",
-      "$include media",
+      "$include mq",
       "$nested-blocks"
    ]
 }
