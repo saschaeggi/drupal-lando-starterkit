@@ -4,7 +4,7 @@
 import Vue from 'vue';
 import text from '../src/modules/text/text.vue';
 
-Vue.component("text", text);
+Vue.component("textComponent", text);
 
 export default {
   name: "App"
