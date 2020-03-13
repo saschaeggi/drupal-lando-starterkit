@@ -135,6 +135,13 @@ nvm use
 npm install
 ```
 
+Install dependencies in `drupal/web/core` (used for linting, e.g.)
+```bash
+cd drupal/web/core/
+nvm use 10.15.1 # no version specified, let's use the one from `drupal/web/themes/frontend/`
+npm install
+```
+
 Run watcher
 ```
 cd drupal/web/themes/frontend/
