@@ -73,27 +73,29 @@
  */
 #}
 
-<header class="m-header" role="banner" aria-label="{{ 'Site header'|t}}">
-  <div class="l-container">
-    {{ page.header }}
-  </div>
-</header>
-
-<main class="l-main">
-  <div class="l-container">
-    <div class="system-messages">
-      {{ page.messages }}
+<div id="app">
+  <header class="m-header" role="banner" aria-label="{{ 'Site header'|t}}">
+    <div class="l-container">
+      {{ page.header }}
     </div>
+  </header>
 
-    {% if is_front == false %}
-      {{ title }}
-    {% endif %}
-    {{ page.content }}
-  </div>
-</main>
+  <main class="l-main">
+    <div class="l-container">
+      <div class="system-messages">
+        {{ page.messages }}
+      </div>
 
-<footer class="m-footer">
-  <div class="l-container">
-    {{ page.footer }}
-  </div>
-</footer>
+      {% if is_front == false %}
+        {{ title }}
+      {% endif %}
+      {{ page.content }}
+    </div>
+  </main>
+
+  <footer class="m-footer">
+    <div class="l-container">
+      {{ page.footer }}
+    </div>
+  </footer>
+</div>

@@ -8,6 +8,7 @@ const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const Fiber = require('fibers');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
+const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
   entry: {
@@ -118,8 +119,12 @@ module.exports = {
       path.join(__dirname, 'node_modules'),
     ],
     extensions: ['.js', '.vue', '.json'],
+    alias: {
+      'vue$': 'vue/dist/vue.esm.js',
+    },
   },
   plugins: [
+    new VueLoaderPlugin(),
     new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",

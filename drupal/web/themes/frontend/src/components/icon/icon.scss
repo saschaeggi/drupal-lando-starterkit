@@ -1,9 +1,8 @@
 .c-icon {
-  height: 24px;
   width: 24px;
-
+  height: 24px;
   @include mq(medium) {
-    height: 32px;
     width: 32px;
+    height: 32px;
   }
 }
