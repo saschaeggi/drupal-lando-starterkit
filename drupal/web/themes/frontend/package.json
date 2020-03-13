@@ -8,7 +8,7 @@
     "build": "webpack -p --progress --mode production --config webpack.config.build.js",
     "scaffold": "yo story",
     "lint": "lint-staged",
-    "lint-all": "eslint \"src/**/*.js\" --fix",
+    "lint-all": "eslint \"src/**/*.js\" --fix && csscomb src --tty-mode",
     "pre-commit": "lint-staged"
   },
   "email": "hello@saschaeggenberger.com",
