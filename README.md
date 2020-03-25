@@ -6,7 +6,7 @@ A Drupal Starterkit with GraphQL, GraphQL Twig, Gin Future UI, Minimal Frontend 
 
 ### Get Docker (for Mac/Windows)
 Install Docker Desktop (Mac/Windows): https://www.docker.com/products/docker-desktop<br/>
-:warning: (Use Version 2.1.0.5 or lower until this issue is fixed: https://github.com/docksal/docksal/issues/482)
+> :warning: Use Version 2.1.0.5 or lower until this issue is fixed: https://github.com/docksal/docksal/issues/482
 
 ### Install Docksal
 Install Docksal: https://docksal.io/
