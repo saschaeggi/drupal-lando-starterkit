@@ -155,7 +155,7 @@ npm run scaffold
 
 ## Customization
 
-#### Add custom domain for local development
+### Add custom domain for local development
 Add the following to your `/etc/hosts`:
 
 ```
