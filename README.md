@@ -151,7 +151,7 @@ cd drupal/web/themes/frontend/
 npm run scaffold
 ```
 
---
+---
 
 ## Customization
 
