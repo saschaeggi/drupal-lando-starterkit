@@ -21,7 +21,7 @@ Clone the repo into ```~/Projects```
 git clone git@github.com:saschaeggi/drupal-docksal-starterkit.git drupal-docksal-starterkit
 ```
 
-### *Optional:* Add custom domain for local development
+#### *Optional:* Add custom domain for local development
 Add the following to your `/etc/hosts`:
 
 ```
@@ -29,6 +29,12 @@ Add the following to your `/etc/hosts`:
 192.168.64.100 drupal.mydomain.local
 ::2 drupal.mydomain.local
 ```
+
+and add your custom domain to the `.docksal/docksal.env`
+```
+VIRTUAL_HOST=mydomain.local
+```
+
 
 ### Build/Install containers
 ```
