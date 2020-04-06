@@ -129,7 +129,9 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin({
+      cleanStaleWebpackAssets: false
+    }),
     new SVGSpritemapPlugin(path.resolve(__dirname, 'images/icons/**/*.svg'), {
       output: {
         filename: 'sprites/sprite.svg',
