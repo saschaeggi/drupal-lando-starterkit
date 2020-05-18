@@ -16,7 +16,6 @@
         "Unable to keep nested IEF data separate with multivalue fields #2653574": "https://www.drupal.org/files/issues/2019-12-28/inline_entity_form-2653574-141.patch"
     },
     "drupal/entity_reference_layout": {
-        "ERL Modal Width #3092929": "https://www.drupal.org/files/issues/2019-12-17/section-ui-improvements_3092929-5.patch",
         "ERL Hide Contextual Button #3093215": "https://www.drupal.org/files/issues/2019-12-17/entity_reference_layout-hide-contextual-edit-button-3093215-3.patch"
     },
     "drupal/imageapi_optimize_webp": {
