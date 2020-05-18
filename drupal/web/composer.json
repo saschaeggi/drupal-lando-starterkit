@@ -41,7 +41,8 @@
         "drupal/paragraphs_modal_edit": "^1.0",
         "drupal/readmehelp": "^1.0",
         "drupal/simple_oauth": "^4.3",
-        "drupal/typed_data": "^1.0"
+        "drupal/typed_data": "^1.0",
+        "drush/drush": "^10.2"
     },
     "require-dev": {
     },
