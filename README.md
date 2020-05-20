@@ -83,7 +83,11 @@ fin composer COMMAND
 
 ## Drupal
 
+### Frontend
 https://drupal-docksal-starterkit.docksal/
+
+### Drupal Backend Login
+https://drupal-docksal-starterkit.docksal/user
 
 ```
 username: admin
