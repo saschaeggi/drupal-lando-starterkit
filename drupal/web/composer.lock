@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6db38b705d703d8448929eade87eef34",
+    "content-hash": "bc1591c3a6dd10cba5b593a017c7b9a5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2684,26 +2684,29 @@
         },
         {
             "name": "drupal/gin_login",
-            "version": "dev-1.x",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_login.git",
-                "reference": "bdfdfca2f18a3ac2e66d293962fe2046ab14b25c"
+                "reference": "8.x-1.0-rc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gin_login-8.x-1.0-rc2.zip",
+                "reference": "8.x-1.0-rc2",
+                "shasum": "412de78d8d5bebf48895055a3a8b465a1d0dd134"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
                 "drupal": {
-                    "version": "8.x-1.0-rc1+2-dev",
-                    "datestamp": "1590001461",
+                    "version": "8.x-1.0-rc2",
+                    "datestamp": "1590001564",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2729,8 +2732,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/gin_login",
                 "issues": "https://www.drupal.org/project/issues/gin_login"
-            },
-            "time": "2020-05-20T19:04:01+00:00"
+            }
         },
         {
             "name": "drupal/gin_toolbar",
@@ -7009,7 +7011,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/entity_reference_layout": 20,
-        "drupal/gin_login": 20,
         "drupal/imageapi_optimize_webp": 20
     },
     "prefer-stable": true,

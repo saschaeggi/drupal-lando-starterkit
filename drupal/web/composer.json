@@ -29,7 +29,7 @@
         "drupal/erl_restriction": "^1.0",
         "drupal/field_group": "^3.0",
         "drupal/gin": "^3.0",
-        "drupal/gin_login": "1.x-dev",
+        "drupal/gin_login": "^1.0",
         "drupal/gin_toolbar": "^1.0",
         "drupal/graphql": "^3.0",
         "drupal/graphql_twig": "^1.0",
