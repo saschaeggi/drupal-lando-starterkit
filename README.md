@@ -26,7 +26,7 @@ fin init
 ```
 
 ### You're ready to go
-https://
+https://drupal-docksal-starterkit.docksal/
 
 ---
 
