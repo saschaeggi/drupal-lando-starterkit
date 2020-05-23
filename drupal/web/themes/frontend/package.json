@@ -7,6 +7,7 @@
     "dev": "webpack --progress --mode development --config  webpack.config.dev.js --watch",
     "build": "webpack -p --progress --mode production --config webpack.config.build.js",
     "scaffold": "yo story",
+    "story": "yo story",
     "lint": "lint-staged",
     "lint-all": "eslint \"src/**/*.js\" --fix && csscomb src --tty-mode",
     "pre-commit": "lint-staged"
