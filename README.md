@@ -25,8 +25,8 @@ git clone git@github.com:saschaeggi/drupal-docksal-starterkit.git drupal-docksal
 fin init
 ```
 
-### Fix services link
-Replace `/sites/development.services.yml` in `drupal/web/sites/default/settings.local.php` with `/sites/local.services.yml`.
+### Create local settings for debugging
+Rename `drupal/web/sites/default/default.settings.local.php` to `drupal/web/sites/default/settings.local.php`
 
 ---
 
