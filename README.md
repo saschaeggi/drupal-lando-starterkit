@@ -25,7 +25,7 @@ git clone git@github.com:saschaeggi/drupal-docksal-starterkit.git drupal-docksal
 fin init
 ```
 
-### Optional: Create local settings for debugging
+#### Optional: Create local settings for debugging
 Rename `drupal/web/sites/default/default.settings.local.php` to `drupal/web/sites/default/settings.local.php`
 
 ---
