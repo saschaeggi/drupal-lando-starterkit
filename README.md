@@ -20,13 +20,13 @@ Clone the repo into ```~/Projects```
 git clone git@github.com:saschaeggi/drupal-docksal-starterkit.git drupal-docksal-starterkit
 ```
 
-### Build/Install containers
+### Build containers
 ```
 fin init
 ```
 
-#### Optional: Create local settings for debugging
-Rename `drupal/web/sites/default/default.settings.local.php` to `drupal/web/sites/default/settings.local.php`
+### You're ready to go
+https://
 
 ---
 
@@ -171,3 +171,9 @@ and add your custom domain to the `.docksal/docksal.env`
 ```
 VIRTUAL_HOST=mydomain.local
 ```
+
+---
+
+## Twig debugging
+**Create local settings for debugging**
+Rename `drupal/web/sites/default/default.settings.local.php` to `drupal/web/sites/default/settings.local.php`
