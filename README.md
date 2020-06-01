@@ -17,9 +17,8 @@ Clone the repo
 git clone git@github.com:saschaeggi/drupal-lando-starterkit.git drupal-lando-starterkit
 ```
 
-### Build containers
+### Let's build the app
 ```
-cd web
 lando start
 ```
 
