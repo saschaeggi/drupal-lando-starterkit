@@ -20,7 +20,7 @@ git clone git@github.com:saschaeggi/drupal-lando-starterkit.git drupal-lando-sta
 ### Build containers
 ```
 cd web
-lando init
+lando start
 lando db-import ../db_dump/drupal.sql
 lando drush cr
 ```
