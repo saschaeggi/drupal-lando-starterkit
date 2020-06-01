@@ -21,8 +21,6 @@ git clone git@github.com:saschaeggi/drupal-lando-starterkit.git drupal-lando-sta
 ```
 cd web
 lando start
-lando db-import ../db_dump/drupal.sql
-lando drush cr
 ```
 
 ### You're ready to go
