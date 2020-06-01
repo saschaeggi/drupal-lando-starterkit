@@ -17,7 +17,7 @@ services:
   appserver:
     build:
       - cd /app/web/ && composer install
-      - cp /app/web/sites/default/default.settings.local.php /app/web/sites/default/settings.local.php
     run:
+      - cp /app/web/sites/default/default.settings.local.php /app/web/sites/default/settings.local.php
       - cd /app/web/ && drush sql-cli < ../db_dump/drupal.sql
       - cd /app/web/ && drush cr
