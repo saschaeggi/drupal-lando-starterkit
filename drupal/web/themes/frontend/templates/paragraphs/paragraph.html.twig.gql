@@ -1,8 +1,0 @@
-query ($paragraph: String!) {
-  paragraphById(id: $paragraph) {
-    __typename
-    type: entityBundle
-    published: entityPublished
-    ... Text
-  }
-}

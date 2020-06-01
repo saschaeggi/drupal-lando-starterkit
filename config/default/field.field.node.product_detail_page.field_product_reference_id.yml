@@ -1,0 +1,19 @@
+uuid: 23ead288-e255-4baa-be3d-13b40319921e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_product_reference_id
+    - node.type.product_detail_page
+id: node.product_detail_page.field_product_reference_id
+field_name: field_product_reference_id
+entity_type: node
+bundle: product_detail_page
+label: 'Product reference id'
+description: 'The product reference id from Magento. Will be used to display the product information in the frontend.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

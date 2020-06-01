@@ -1,0 +1,53 @@
+/* ==|====================
+  Settings / General Vars
+  ======================= */
+
+//== Base
+//
+$font: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+$font-size-base: 16px;
+
+//== Default Colors
+//
+$color-selection: blue;
+$color-white: #fff;
+
+//== Layout
+//
+$max-container-width: 1064px;
+
+//== Grid
+//
+$gridColumns: 12;
+$gridGutter: 20px;
+
+//== Gutters
+//
+$gutter-zero: 8px;
+$gutter-micro: 16px;
+$gutter-small: 24px;
+$gutter-neutral: 32px;
+$gutter-medium: 40px;
+$gutter-big: 48px;
+$gutter-great: 64px;
+$gutter-large: 80px;
+$gutter-wide: 96px;
+$gutter-ultra: 120px;
+$gutter-huge: 144px;
+
+//== Breakpoints
+//
+$sizeBreakpointSmall: 768px;
+$sizeBreakpointMedium: 1024px;
+$sizeBreakpointLarge: 1440px;
+
+//== Transitions
+//
+$transition-time-default: 340ms;
+$transition-time-fancy: 140ms;
+
+$basic-easing: cubic-bezier(.455, .03, .515, .955);
+$fancy-easing: cubic-bezier(.19, 1, .22, 1);
+
+$basic-transition: $transition-time-default $basic-easing;
+$fancy-transition: $transition-time-fancy $fancy-easing;

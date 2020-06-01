@@ -1,0 +1,33 @@
+/* ==|===
+   Main
+   ====== */
+
+$path: ".." !default;
+$output-bourbon-deprecation-warnings: false;
+
+// Assets
+@import "../node_modules/bourbon/core/bourbon";
+@import "../node_modules/normalize.css/normalize";
+
+@import "settings/settings";
+
+// Settings
+@import "settings/fonts";
+
+// Helpers
+@import "helpers/svg-sprite";
+
+// Tools
+@import "tools/**/*";
+
+// Base
+@import "base/**/*";
+
+// Layout
+@import "layout/**/*";
+
+// Components
+@import "../src/components/**/*.scss";
+
+// Modules
+@import "../src/modules/**/*.scss";

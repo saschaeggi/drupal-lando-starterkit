@@ -1,0 +1,22 @@
+uuid: cceebe58-4da9-4942-acd9-d3eb21ebd8b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - frontend
+_core:
+  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+id: frontend_messages
+theme: frontend
+region: messages
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

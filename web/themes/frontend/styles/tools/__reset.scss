@@ -1,0 +1,20 @@
+@-ms-viewport {
+  width: auto;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+* {
+  &,
+  &:after,
+  &:before {
+    box-sizing: border-box;
+  }
+
+  font-variant-ligatures: none;
+}

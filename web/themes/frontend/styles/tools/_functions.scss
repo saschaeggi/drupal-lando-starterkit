@@ -1,0 +1,65 @@
+/* ==|===============
+   Tools / Functions
+   ================== */
+
+@function pi() {
+    @return 3.14159265359;
+}
+
+@function rad($angle) {
+    $unit: unit($angle);
+    $unitless: $angle / ($angle * 0 + 1);
+    // If the angle has 'deg' as unit, convert to radians.
+    @if $unit == deg {
+        $unitless: $unitless / 180 * pi();
+    }
+    @return $unitless;
+}
+
+@function sin($angle) {
+    $sin: 0;
+    $angle: rad($angle);
+    // Iterate a bunch of times.
+    @for $i from 0 through 10 {
+        $sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+    }
+    @return $sin;
+}
+
+@function cos($angle) {
+    $cos: 0;
+    $angle: rad($angle);
+    // Iterate a bunch of times.
+    @for $i from 0 through 10 {
+        $cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+    }
+    @return $cos;
+}
+
+@function tan($angle) {
+    @return sin($angle) / cos($angle);
+}
+
+@function rem($px, $ref: $font-size-base) {
+  @return toRem(toPx($px) / toPx($ref));
+}
+@function em($px, $ref: $font-size-base) {
+  @return toEm(toPx($px) / toPx($ref));
+}
+
+@function pxToEm($px, $ref: $font-size-base) {
+  @return toEm(toPx($px) / toPx($ref));
+}
+@function pxToRem($px) {
+  @return toRem(toPx($px) / toPx($font-size-base));
+}
+
+@function toEm($val) {
+  @return ($val + 0em);
+}
+@function toRem($val) {
+  @return ($val + 0rem);
+}
+@function toPx($val) {
+  @return ($val + 0px);
+}

@@ -1,0 +1,34 @@
+/**
+* Drupal modal
+*/
+.ui-dialog {
+  max-width: 940px;
+  margin: 0 auto;
+
+  // .ui-dialog-titlebar {
+  //   font-size: 1.5em;
+  //   padding: 24px;
+  // }
+
+  // .ui-dialog-titlebar-close {
+  //   right: 24px;
+  // }
+
+  // .form-type-textfield {
+  //   label {
+  //     display: block;
+  //   }
+  // }
+
+  // a.tabledrag-handle .handle {
+  //   width: 24px;
+  //   height: 24px;
+  // }
+}
+
+/**
+* Show Drupal graphQL explorer button in front of elements
+*/
+.graphql-twig-debug-button {
+  z-index: 10;
+}

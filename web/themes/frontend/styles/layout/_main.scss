@@ -1,0 +1,12 @@
+/* ==|====================
+   Layout / Main
+   ======================= */
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+
+  @include mq(large) {
+    flex-direction: row;
+  }
+}

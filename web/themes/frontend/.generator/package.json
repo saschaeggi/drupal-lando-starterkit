@@ -1,0 +1,19 @@
+{
+  "name": "generator-story",
+  "version": "0.1.0",
+  "description": "Frontend scaffolding",
+  "files": [
+    "app"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^1.0.0"
+  },
+  "devDependencies": {
+    "chalk": "^3.0.0",
+    "yosay": "^2.0.2"
+  }
+}

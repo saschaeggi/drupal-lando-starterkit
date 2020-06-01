@@ -1,9 +1,0 @@
-uuid: a983a734-155c-4eeb-a17f-3fd66c44a949
-langcode: en
-status: true
-dependencies: {  }
-id: product_item
-label: 'Product item'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

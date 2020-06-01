@@ -1,0 +1,10 @@
+local:
+  uri: http://drupal-lando-starterkit.lando.site
+  root: /var/www/docroot
+  paths:
+   - files: sites/default/files
+  command:
+    sql:
+      sync:
+        options:
+          no-dump: true

@@ -1,0 +1,51 @@
+uuid: c77ccb36-6570-4957-a63c-6b35ecc26a00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contents
+    - node.type.article
+    - paragraphs.paragraphs_type.product_reference_list
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_layout
+id: node.article.field_contents
+field_name: field_contents
+entity_type: node
+bundle: article
+label: Contents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: '0'
+    target_bundles:
+      product_reference_list: product_reference_list
+      text: text
+      section: section
+    target_bundles_drag_drop:
+      product_item:
+        weight: '4'
+        enabled: 0
+      product_reference_list:
+        enabled: '1'
+        weight: '5'
+      text:
+        enabled: '1'
+        weight: '6'
+      section:
+        enabled: '1'
+        weight: '7'
+    layout_bundles:
+      - section
+    allowed_layouts:
+      'Columns: 1':
+        layout_onecol: 'One column'
+      'Columns: 2':
+        layout_twocol: 'Two column'
+field_type: entity_reference_layout_revisioned

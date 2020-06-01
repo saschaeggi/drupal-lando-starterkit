@@ -1,0 +1,41 @@
+name: Frontend 1.0.0
+type: theme
+base theme: classy
+description: 'Custom Frontend Theme'
+package: Core
+core: 8.x
+
+regions:
+  header: Header
+  messages: Messages
+  content: Content
+  footer: Footer
+
+libraries:
+  - frontend/base
+
+libraries-remove:
+  - core/modernizr
+
+libraries-override:
+  system/base: false
+  classy/base: false
+  core/html5shiv: false
+  core/modernizr: false
+
+stylesheets-remove:
+  - core/assets/vendor/normalize-css/normalize.css
+
+component-libraries:
+  src:
+    paths:
+      - src
+  components:
+    paths:
+      - src/components
+  modules:
+    paths:
+      - src/modules
+  # storybook:
+  #   paths:
+  #     - ../PATHTO/storybook/twig

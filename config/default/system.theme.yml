@@ -1,0 +1,4 @@
+admin: gin
+default: frontend
+_core:
+  default_config_hash: fOjer9hADYYnbCJVZMFZIIM1azTFWyg84ZkFDHfAbUg

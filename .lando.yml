@@ -1,0 +1,19 @@
+name: drupal-lando-starterkit
+recipe: drupal8
+config:
+  webroot: web
+  php: '7.2'
+  via: apache:2.4
+  database: mysql:5.7
+  xdebug: true
+  config:
+    database: drupal8
+    username: drupal8
+    password: drupal8
+    host: database
+    # for mysql
+    port: 3306
+services:
+  appserver:
+    build:
+      - composer install
