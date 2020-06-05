@@ -2,7 +2,7 @@ name: drupal-lando-starterkit
 recipe: drupal8
 config:
   webroot: web
-  php: '7.2'
+  php: '7.3'
   via: apache:2.4
   database: mysql:5.7
   xdebug: true
