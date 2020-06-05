@@ -14,7 +14,7 @@ Install Lando: https://docs.lando.dev/basics/installation.html
 ### Clone repo
 Clone the repo
 ```
-git clone git@github.com:saschaeggi/drupal-lando-starterkit.git drupal-lando-starterkit
+git clone git@github.com:saschaeggi/drupal-lando-starterkit.git drupal-lando-starterkit && cd drupal-lando-starterkit
 ```
 
 ### Let's build the app
