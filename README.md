@@ -49,7 +49,6 @@ lando poweroff
 lando ssh
 ```
 
-
 ### Drush
 Make sure you're in the frontend folder (`cd web`)
 
@@ -62,6 +61,20 @@ Make sure you're in the frontend folder (`cd web`)
 
 ```
 lando composer COMMAND
+```
+
+---
+
+## Xdebug
+
+### Start Xdebug
+```
+lando xdebug-on
+```
+
+### Stop Xdebug
+```
+lando xdebug-off
 ```
 
 ---
