@@ -1,0 +1,41 @@
+uuid: b5e418e4-b45a-48c9-a851-b035bca97524
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_layout_paragraphs
+    - node.type.article
+    - paragraphs.paragraphs_type.images
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.article.field_layout_paragraphs
+field_name: field_layout_paragraphs
+entity_type: node
+bundle: article
+label: 'Layout Paragraphs'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      section: section
+      text: text
+      images: images
+    target_bundles_drag_drop:
+      images:
+        enabled: true
+        weight: -5
+      section:
+        enabled: true
+        weight: -7
+      text:
+        enabled: true
+        weight: -6
+field_type: entity_reference_revisions

@@ -1,7 +1,7 @@
 frontend.any:
   label: No media query
   weight: 1
-  frontend.small:
+frontend.small:
   label: small
   mediaQuery: ''
   weight: 0

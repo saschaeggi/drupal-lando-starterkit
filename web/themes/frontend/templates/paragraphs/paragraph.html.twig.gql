@@ -4,5 +4,6 @@ query ($paragraph: String!) {
     type: entityBundle
     published: entityPublished
     ... Text
+    ... Images
   }
 }

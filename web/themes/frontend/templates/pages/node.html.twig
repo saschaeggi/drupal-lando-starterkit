@@ -13,6 +13,7 @@
 {{ attach_library('classy/node') }}
 
 <article{{ attributes.addClass(classes) }}>
+  {{ graphql_debug }}
   {{ title_prefix }}
   <h1 class="h1-alike">{{ graphql.title }}</h1>
   {{ title_suffix }}
@@ -21,5 +22,5 @@
   {% include '@modules/lead/lead.twig' with {'lead': graphql.body.processed} %}
 
   {# load content modules #}
-  {{ content.field_contents }}
+  {{ content }}
 </article>

@@ -1,10 +1,14 @@
 {% block content %}
 <div is="textComponent" inline-template>
   <div class="m-text">
+    {% include '@components/text/text.twig' with { 'text': data.fieldText.processed } %}
+
+    <!--
     <button type="button" @click="toggle">Toggle text</button>
     <div v-show="isVisible" style="display: none;">
-      {% include '@components/text/text.twig' with {'text': data.fieldText.processed} %}
+      {{ 'Hidden text'|t }}
     </div>
+    -->
   </div>
 </div>
 {% endblock %}

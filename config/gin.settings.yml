@@ -1,0 +1,16 @@
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+favicon:
+  use_default: true
+enable_darkmode: false
+preset_accent_color: blue
+accent_color: ''
+preset_focus_color: gin
+focus_color: ''
+high_contrast_mode: false
+classic_toolbar: vertical
+icon_default: true
+icon_upload: ''

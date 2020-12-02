@@ -1,9 +1,0 @@
-uuid: 944ed85c-02d4-41bc-9c90-0993a6b75429
-langcode: en
-status: true
-dependencies: {  }
-id: product_reference_list
-label: 'Product reference list'
-icon_uuid: null
-description: ''
-behavior_plugins: {  }

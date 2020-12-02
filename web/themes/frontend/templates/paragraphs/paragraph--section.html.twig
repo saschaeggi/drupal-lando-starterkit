@@ -48,8 +48,8 @@ not paragraph.isPublished() ? 'paragraph--unpublished'
 %}
 {% block paragraph %}
 <div{{ attributes.addClass(classes) }}>
-{% block content %}
-{{ content|without('contextual_links') }}
-{% endblock %}
+  {% block content %}
+    {{ content|without('contextual_links') }}
+  {% endblock %}
 </div>
 {% endblock paragraph %}

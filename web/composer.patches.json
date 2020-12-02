@@ -1,10 +1,13 @@
 {
   "patches": {
     "drupal/core": {
+        "New Drupal favicon #3178135": "https://www.drupal.org/files/issues/2020-10-21/3178135-9_32px-max.patch",
         "Fix incorrect order and duplicate theme hook suggestions #2752443": "https://www.drupal.org/files/issues/2752443_incorrect-order-and-duplicate-theme-hook-suggestions-5.patch",
         "Fix inline editing for paragraphs #2700147": "https://www.drupal.org/files/issues/2019-05-30/2700147-25.patch",
-        "Nested Paragraphs create multiple drag handles #3092181": "https://www.drupal.org/files/issues/2020-01-15/claro-nested_paragraphs_multiple_drag_handles-3092181-37--D8.8.1--fix-only--do-not-test.patch",
-        "IEF Quick Edit #3110232": "https://www.drupal.org/files/issues/2020-01-31/3110232.patch"
+        "Nested Paragraphs create multiple drag handles #3092181": "https://www.drupal.org/files/issues/2020-05-28/3092181-87-90x.patch",
+        "Paragraphs collapse all #3099026": "https://www.drupal.org/files/issues/2020-02-20/3099026-9.patch",
+        "IEF Quick Edit #3110232": "https://www.drupal.org/files/issues/2020-01-31/3110232.patch",
+        "#3171743 Not possible to overwrite the upload forms for media library": "https://www.drupal.org/files/issues/2020-09-21/3171743-16.patch"
     },
     "drupal/media_entity_actions": {
         "Fix media actions for core media #3008650": "https://www.drupal.org/files/issues/2018-10-23/media_entity_actions-mutltiple_delete-3008650.patch"
@@ -12,11 +15,12 @@
     "drupal/inline_entity_form": {
         "Unable to keep nested IEF data separate with multivalue fields #2653574": "https://www.drupal.org/files/issues/2019-12-28/inline_entity_form-2653574-141.patch"
     },
-    "drupal/entity_reference_layout": {
-        "ERL Hide Contextual Button #3093215": "https://www.drupal.org/files/issues/2019-12-17/entity_reference_layout-hide-contextual-edit-button-3093215-3.patch"
-    },
     "drupal/imageapi_optimize_webp": {
-      "Adding missing composer.json #3103769": "https://www.drupal.org/files/issues/2019-12-30/3103769-missing-composer-json-2.patch"
+      "Fix generation error #3128694": "https://www.drupal.org/files/issues/2020-08-10/webp-image-regeneration-error-after-flush-3128694-12.patch",
+      "Fix webp submodule Drupal 9 #3153942": "https://www.drupal.org/files/issues/2020-06-23/3153942-2.patch"
+    },
+    "drupal/dropzonejs": {
+      "#3051658 Overwrite upload form for media library": "https://www.drupal.org/files/issues/2020-10-26/3051658-12.patch"
     }
   }
 }

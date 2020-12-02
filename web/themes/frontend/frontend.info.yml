@@ -3,7 +3,7 @@ type: theme
 base theme: classy
 description: 'Custom Frontend Theme'
 package: Core
-core: 8.x
+core_version_requirement: ^8 || ^9
 
 regions:
   header: Header
@@ -25,6 +25,9 @@ libraries-override:
 
 stylesheets-remove:
   - core/assets/vendor/normalize-css/normalize.css
+
+ckeditor_stylesheets:
+ - dist/css/main.css
 
 component-libraries:
   src:

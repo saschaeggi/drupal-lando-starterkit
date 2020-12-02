@@ -1,0 +1,37 @@
+<div class="c-image">
+  <!-- the new way of rendering a media image -->
+  {% if media.image.ResponsiveImageStructured %}
+    {% set image = media.image.ResponsiveImageStructured %}
+    {% if image.sources %}
+      <picture class="c-image__image">
+    {% endif %}
+      {% for source in image.sources %}
+        <source
+          {% if source.media %}media="{{ source.media }}"{% endif %}
+          data-srcset="{{ source.srcset }}"
+          type="{{ source.type }}"
+        >
+      {% endfor %}
+      <img
+        class="img lazy"
+        loading="lazy"
+        data-src="{{ image.image.url }}"
+        {% if image.image.alt %}alt="{{ image.image.alt }}"{% endif %}
+        {% if image.image.title %}title="{{ image.image.title }}"{% endif %}
+      />
+    {% if image.sources %}
+      </picture>
+    {% endif %}
+  {% endif %}
+
+  <!-- Regular single image -->
+  {% if image and not media.image %}
+    <img
+      class="img lazy"
+      loading="lazy"
+      data-src="{{ image.url }}"
+      {% if image.alt %}alt="{{ image.alt }}"{% endif %}
+      {% if image.title %}title="{{ image.title }}"{% endif %}
+    />
+  {% endif %}
+</div>

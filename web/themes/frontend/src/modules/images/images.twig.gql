@@ -1,0 +1,12 @@
+fragment Images on ParagraphImages {
+  id
+  fieldImage {
+    media: entity {
+      ... on MediaImage {
+        image: fieldMediaImage {
+          ResponsiveImageStructured(style: wide)
+        }
+      }
+    }
+  }
+}
