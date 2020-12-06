@@ -41,7 +41,7 @@
         "drupal/dropzonejs": "^2.3",
         "drupal/entity_browser": "^2.5",
         "drupal/field_group": "^3.1",
-        "drupal/gin": "^3.0",
+        "drupal/gin": "3.x-dev@dev",
         "drupal/gin_login": "^1.0",
         "drupal/gin_toolbar": "^1.0",
         "drupal/graphql": "^3.0",

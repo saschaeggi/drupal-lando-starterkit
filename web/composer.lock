@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "22f7946ab8a365f5a506238046295cd6",
+    "content-hash": "36f5587d94b76faaac60c57152538341",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2537,17 +2537,11 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha31",
+            "version": "dev-3.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha31"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha31.zip",
-                "reference": "8.x-3.0-alpha31",
-                "shasum": "984eee103d3ea90de6f73ec1028054ffde49c962"
+                "reference": "6f897af42ab6b627376e79f134c26db476ccf916"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2555,12 +2549,15 @@
             },
             "type": "drupal-theme",
             "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
                 "drupal": {
-                    "version": "8.x-3.0-alpha31",
-                    "datestamp": "1606944288",
+                    "version": "8.x-3.0-alpha31+2-dev",
+                    "datestamp": "1607213185",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -8131,6 +8128,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/gin": 20,
         "drupal/graphql_twig": 10,
         "drupal/imageapi_optimize_webp": 10,
         "drupal/inline_entity_form": 5,
