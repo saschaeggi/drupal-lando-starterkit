@@ -19,7 +19,7 @@ module:
   dropzonejs: 0
   dynamic_page_cache: 0
   editor: 0
-  entity_reference_layout: 0
+  entity_browser: 0
   entity_reference_revisions: 0
   field: 0
   field_group: 0
@@ -39,6 +39,7 @@ module:
   imageapi_optimize_binaries: 0
   imageapi_optimize_webp: 0
   imageapi_optimize_webp_responsive: 0
+  inline_entity_form: 0
   language: 0
   layout_discovery: 0
   layout_paragraphs: 0
@@ -63,6 +64,7 @@ module:
   simple_oauth: 0
   system: 0
   taxonomy: 0
+  telephone: 0
   text: 0
   toolbar: 0
   tour: 0

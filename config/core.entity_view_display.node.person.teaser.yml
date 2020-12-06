@@ -1,0 +1,44 @@
+uuid: f2aac524-d51d-45b1-8d4c-d2c4c3229534
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_email
+    - field.field.node.person.field_first_name
+    - field.field.node.person.field_phone
+    - field.field.node.person.field_picture
+    - image.style.thumbnail
+    - node.type.person
+  module:
+    - media
+    - user
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  field_first_name:
+    type: string
+    weight: 1
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_picture:
+    type: media_thumbnail
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_email: true
+  field_phone: true
+  langcode: true
+  links: true

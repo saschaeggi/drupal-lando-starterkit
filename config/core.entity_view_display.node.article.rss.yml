@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.article.field_images
     - field.field.node.article.field_layout_paragraphs
     - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_person
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -27,5 +28,6 @@ hidden:
   field_images: true
   field_layout_paragraphs: true
   field_paragraphs: true
+  field_person: true
   field_tags: true
   langcode: true

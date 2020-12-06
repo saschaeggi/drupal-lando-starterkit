@@ -1,0 +1,21 @@
+uuid: ea14c29b-5e33-4bce-b9c7-ea7b170b985e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.person
+  module:
+    - telephone
+id: node.person.field_phone
+field_name: field_phone
+entity_type: node
+bundle: person
+label: Phone
+description: 'Swiss phone format if possible: +41 00 000 00 00'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

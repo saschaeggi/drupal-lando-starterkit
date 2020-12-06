@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.field_images
     - field.field.node.article.field_layout_paragraphs
     - field.field.node.article.field_paragraphs
+    - field.field.node.article.field_person
     - field.field.node.article.field_tags
     - node.type.article
   module:
@@ -53,6 +54,15 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    region: content
+  field_person:
+    weight: 6
+    label: above
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
   field_tags:
     type: entity_reference_label

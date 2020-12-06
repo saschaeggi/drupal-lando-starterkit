@@ -21,6 +21,13 @@
     },
     "drupal/dropzonejs": {
       "#3051658 Overwrite upload form for media library": "https://www.drupal.org/files/issues/2020-10-26/3051658-12.patch"
+    },
+    "drupal/layout_paragraphs": {
+      "Label #3157030": "https://www.drupal.org/files/issues/2020-07-05/layout_paragraphs_3157030_2.patch",
+      "Claro #3158842": "https://www.drupal.org/files/issues/2020-07-13/support-layout-paragraphs-in-claro-3158842-2.patch"
+    },
+    "drupal/entity_browser": {
+      "#3181631": "https://www.drupal.org/files/issues/2020-11-10/3181631-3.patch"
     }
   }
 }
