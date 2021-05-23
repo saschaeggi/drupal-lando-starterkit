@@ -15,6 +15,7 @@ config:
     port: 3306
 services:
   appserver:
+    scanner: false
     build:
       - cd /app/web/ && composer install
     run:
